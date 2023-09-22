@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Gruppo&family=Montserrat&display=swap');
+
+
+
+.footerCSS {
+   
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.iconsCSS {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #1c1c1c9a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-bottom: 0 !important; */
+    position: relative !important;
+    top: 1rem !important;
+ 
+}
+
+.iconsCSS .p-2 {
+    margin: 0 20px;
+}
+@media (max-width:768px){
+    /* .elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515{
+        margin-right: 20px;
+    } */
+    .iBpuyI {
+        margin-right: -12px;
+        margin-bottom: 23%;
+    }
+    .euBiGU{
+        margin-bottom: 42%;
+    }
+}

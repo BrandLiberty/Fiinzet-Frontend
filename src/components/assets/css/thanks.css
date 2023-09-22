@@ -1,0 +1,16 @@
+.thanks{
+    margin-top: 50px !important;
+}
+.adj-height{
+    margin-top: 191px !important;
+}
+.box1{
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .thanks{
+        margin-bottom: 60% !important;
+    }
+}
