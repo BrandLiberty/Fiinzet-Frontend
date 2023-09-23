@@ -3,6 +3,12 @@ import { CDBBtn, CDBIcon, CDBBox } from "cdbreact";
 import "../assets/css/footer.css";
 
 const Footer = () => {
+
+  function handleCall() {
+    const phoneNumber = '+918087333493'; // Replace with the phone number you want to call
+    window.location.href = `tel:${phoneNumber}`;
+  }
+
   return (
     <div className="footerCSS">
       {/* .........used footer....... */}
@@ -17,7 +23,7 @@ const Footer = () => {
           Captech Pvt Ltd.
         </p>
         <ul className="list-inline">
-        
+
           <li className="list-inline-item">
             <a href="/">T&C Apply</a>
           </li>
@@ -79,8 +85,8 @@ const Footer = () => {
         <div>
           {/* Whatsapp Integration */}
           <div className="elfsight-app-12a24646-5e89-4fe3-a429-892f2bb32143"></div>
-          {/* Call Integration */}
-          <div className="elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515"></div>
+          <div className="call-btn" onClick={handleCall}>Call Us</div>
+          {/*<div className="elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515"></div>*/}
         </div>
       </footer>
     </div>

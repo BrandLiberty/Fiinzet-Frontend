@@ -23,10 +23,33 @@
 .iconsCSS .p-2 {
     margin: 0 20px;
 }
+
+.call-btn{
+    position: fixed;
+    right: 21px;
+    bottom:20px;
+    padding: 14px;
+    background-color: rgb(179, 211, 62);
+    border-radius: 23px;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px grey;
+}
+ 
+.call_btn:hover{
+    cursor: pointer;
+}
 @media (max-width:768px){
     /* .elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515{
         margin-right: 20px;
     } */
+    .call-btn{
+        bottom: 50px;
+    }
     .iBpuyI {
         margin-right: -12px;
         margin-bottom: 23%;
