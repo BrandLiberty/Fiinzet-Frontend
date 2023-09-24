@@ -281,10 +281,6 @@ border-radius: 20px !important;
 }
 
 @media (min-width: 648px) and (max-width: 768px) {
-   /* .cardWidth{
-        width: 35vw;
-    }  */
-
     .cardImgAdjust img {
         /* object-fit: cover; */
         /* height: 200px; */

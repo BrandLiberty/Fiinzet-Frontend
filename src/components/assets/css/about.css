@@ -34,7 +34,7 @@ font-weight: 400 !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    min-height: 100vh !important;
+    min-height: 100% !important;
     /* Adjust this as needed to cover the entire viewport */
 
     /* Add the blur effect */

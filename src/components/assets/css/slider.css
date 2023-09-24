@@ -321,7 +321,7 @@ a .nav-link {
   /* Remove unnecessary styles for mobile view */
   .carousel-indicators {
     
-    margin-top: 10vh !important;
+    margin-top: 10% !important;
     padding: 0 !important;
     
   }
