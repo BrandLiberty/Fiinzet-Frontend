@@ -1,9 +1,22 @@
 import React from "react";
 import { CDBBtn, CDBIcon, CDBBox } from "cdbreact";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import "../assets/css/footer.css";
 
 const Footer = () => {
 
+  function CallIcon() {
+    return (
+      <FontAwesomeIcon icon={faPhone} style={iconStyle}/>
+      );
+    }
+    
+    const iconStyle = {
+      color: 'rgb(179, 211, 62)', // Change this to the desired color
+    };
+    
+  
   function handleCall() {
     const phoneNumber = '+918087333493'; // Replace with the phone number you want to call
     window.location.href = `tel:${phoneNumber}`;
@@ -85,7 +98,7 @@ const Footer = () => {
         <div>
           {/* Whatsapp Integration */}
           <div className="elfsight-app-12a24646-5e89-4fe3-a429-892f2bb32143"></div>
-          <div className="call-btn" onClick={handleCall}>Call Us</div>
+          <div className="call-btn" onClick={handleCall}><CallIcon /></div>
           {/*<div className="elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515"></div>*/}
         </div>
       </footer>
