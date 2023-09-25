@@ -1,8 +1,6 @@
 import React ,{useState,createContext} from "react";
-import Provider from "./context/Provider";
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Screen from "./screen/Screen";
-import Navbar from "./components/navigation/Navbar";
 import HomeLanding from "./components/container/home/HomeLanding";
 import AboutUs from "./components/container/about/About";
 import Product from "./components/container/products/Product";

@@ -5,7 +5,6 @@ import { Form, Alert } from "react-bootstrap";
 import Contact from "../../assets/images/details.jpg";
 import "../../assets/css/login.css";
 import "../../assets/css/contact.css";
-import PhoneSignUp from "./PhoneSignUp";
 import { Context } from "../../../App";
 
 const Login = () => {
@@ -16,10 +15,7 @@ const Login = () => {
   const [error, setError] = useState("");
   // const [name, setname] = useState("");
    const [phone, setphone1] = useState("");
-  // const [email, setemail] = useState("");
-  // const [pincode, setpincode] = useState("");
-  // const [status, setstatus] = useState("");
-  // const [city, setcity] = useState("");
+  
   const [flage, setflage] = useState("");
   
   const navigate = useNavigate();
