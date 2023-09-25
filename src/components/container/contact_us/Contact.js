@@ -129,7 +129,7 @@ const ContactUs = () => {
               ></textarea>
             </div>
 
-            <div class="button-container">
+            <div className="button-container">
               <div className="from-group py-3">
                 <button
                   type="button"

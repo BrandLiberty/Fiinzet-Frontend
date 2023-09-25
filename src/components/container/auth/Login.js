@@ -178,7 +178,7 @@ const Login = () => {
                 </input> I agree to Fiinzet Privacy Policy and Terms & Conditions and receive communication from Fiinzet via Call, SMS, E-mail, and WhatsApp.
               </div>
             </Form>
-            <div class="button-container">
+            <div classNames="button-container">
               <div className="from-group py-3 hlB">
                 <button onClick={add} className="btn btn-primary shadow w-100 verifyBtn">
                   Verify OTP

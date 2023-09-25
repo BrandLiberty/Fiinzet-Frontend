@@ -1,0 +1,73 @@
+
+.slider-btn {
+  min-width: 15vw;
+  min-height: 3vh;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #97b136;
+background: linear-gradient(90deg,#97b136 0%, #97b136 100%);
+  border: none;
+  /* border-radius: 1000px; */
+  box-shadow: 12px 12px 24px rgba(119, 171, 76, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 1vw;
+  }
+/* 
+.slider-btn::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(15vw + 3vw);
+  min-height: calc(6vh + 2.5vh);
+  border: 6px solid #97b136;
+  box-shadow: 0 0 60px #97b136;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+
+.slider-btn:hover::before, .slider-btn:focus::before {
+  opacity: 1;
+}
+
+.slider-btn::after {
+  content: '';
+  width: 20vw;
+   height: 2vh;
+  border-radius: 100%;
+  border: 6px solid #97b136;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.slider-btn:hover::after, .slider-btn:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 15vw;
+    height: 15vh;
+    opacity: 0;
+  }
+} */

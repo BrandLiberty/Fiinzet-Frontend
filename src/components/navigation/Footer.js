@@ -93,11 +93,9 @@ const Footer = () => {
 
         <div>
           {/* Whatsapp Integration */}
-          {/*<div className="elfsight-app-12a24646-5e89-4fe3-a429-892f2bb32143"></div>*/}
-          <div className="wtsp-btn wp-hover-effect" onClick={handleWhatsAppClick}><i class="fa-brands fa-whatsapp fa-2xl fa-shake wp-hover-effect"></i></div>
+          <div className="wtsp-btn wp-hover-effect" onClick={handleWhatsAppClick}><i className="fa-brands fa-whatsapp fa-2xl fa-shake wp-hover-effect"></i></div>
 
-          <div className="call-btn call-hover-effect" onClick={handleCall}><i class="fa-solid fa-phone-volume fa-shake fa-2xl call-hover-effect"></i></div>
-          {/*<div className="elfsight-app-1a18ad62-adb8-43a5-9f98-01f69cfb4515"></div>*/}
+          <div className="call-btn call-hover-effect" onClick={handleCall}><i className="fa-solid fa-phone-volume fa-shake fa-2xl call-hover-effect"></i></div>
         </div>
       </footer>
     </div>

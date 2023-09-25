@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/navigation/Navbar'
 import Footer from '../components/navigation/Footer'
-// import { UserAuthContextProvider } from '../context/UserAuthContext'
+import { useRef } from 'react';
+import "../components/assets/css/screen.css";
+
 const Screen = (props) => {
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -24,12 +27,13 @@ const Screen = (props) => {
       width: `${screenWidth}px`,
       height: `${screenHeight}px`,
       overflowX :'hidden',
-      // border : `15px solid red`
     }}>
       <div>
         <Navbar />
       </div>
-      <div >
+      <div style={{
+        marginTop: '95px'
+      }} className='body-margin-top-media'>
         {props?.children}
       </div>
       <div style={{

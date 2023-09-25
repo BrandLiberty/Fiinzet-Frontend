@@ -196,7 +196,7 @@ const LoanEligibilityCalculator = () => {
               </div>
           
             
-              <div class="button-container">
+              <div className="button-container">
 
               <div className="from-group py-3 hlB">
               <Stack spacing={2} direction="row">
