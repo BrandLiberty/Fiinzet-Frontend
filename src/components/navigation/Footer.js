@@ -1,9 +1,10 @@
 import React from "react";
 import { CDBBtn, CDBIcon, CDBBox } from "cdbreact";
-import "../assets/css/footer.css";
+import "../assets/css/navigation/footer.css";
 
 const Footer = () => {
 
+  // Handle Whatsapp Integration
   const phoneNumber = '+918087333493'; // Replace with the desired phone number
   const message = 'Hello!'; // Optional message
 
@@ -12,7 +13,7 @@ const Footer = () => {
     window.location.href = whatsappLink;
   };
 
-
+  // Handle call integration
   function handleCall() {
     const phoneNumber = '+918087333493'; // Replace with the phone number you want to call
     window.location.href = `tel:${phoneNumber}`;
@@ -20,6 +21,7 @@ const Footer = () => {
 
   return (
     <div className="footerCSS">
+
       {/* .........used footer....... */}
       <hr className="featurette-divider" />
 
@@ -95,7 +97,8 @@ const Footer = () => {
           {/* Whatsapp Integration */}
           <div className="wtsp-btn wp-hover-effect" onClick={handleWhatsAppClick}><i className="fa-brands fa-whatsapp fa-2xl fa-shake wp-hover-effect"></i></div>
 
-          <div className="call-btn call-hover-effect" onClick={handleCall}><i className="fa-solid fa-phone-volume fa-shake fa-2xl call-hover-effect"></i></div>
+          {/*Call Integration*/}
+          <div className="call-btn call-hover-effect" onClick={handleCall}><i className="fa-solid fa-phone-volume  fa-2xl fa-shake call-hover-effect"></i></div>
         </div>
       </footer>
     </div>

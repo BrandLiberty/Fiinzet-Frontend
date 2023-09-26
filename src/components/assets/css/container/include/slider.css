@@ -1,0 +1,195 @@
+a{
+  text-decoration: none;
+  z-index: 100;
+}
+.no-horizontal-padding {
+  position: relative;
+  margin-top: 0px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-height{
+  margin-top: 0px !important;
+}
+
+.Slider-width{
+  width: 100%;
+  margin:0 auto;
+}
+/* 
+.carousel-item {
+  border-radius: 2% !important;
+  height: 646px; Adjust height as needed   !!!!!!!!!!!!!!
+  overflow: hidden;
+
+} */
+
+.carousel-image-style{
+  border: 3px solid blue;
+}
+.apply-now-button{
+  position: absolute;
+  top: 15px;
+}
+.wrap{
+  position: relative !important;
+}
+.carousel-slider-1{
+  background-image: url('../../../images/DM1.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  /* position: relative; */
+}
+.carousel-slider-2{
+  background-image: url('../../../images/DM2.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+.carousel-slider-3{
+  background-image: url('../../../images/DM3.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+.carousel-slider-4{
+  background-image: url('../../../images/DM4.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+.apply-btn-slider{
+  position: absolute !important;
+  right: 11%;
+  bottom: 10%;
+}
+.slider-left-btn{
+  position: absolute !important;
+  left: 10%;
+  bottom: 10%;
+}
+
+@media (max-width: 913px){
+  .apply-btn-slider{
+    font-weight: 400;
+    position: absolute;
+    right: 11%;
+    bottom: 7%;
+    min-height: 3vh !important;
+  }
+  .slider-left-btn{
+    font-weight: 400;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    min-height: 3vh !important;
+  }
+}
+
+@media (max-width: 774px) {
+  
+ .carousel-slider-1{
+  background-image: url('../../../images/M1.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+.carousel-slider-2{
+  background-image: url('../../../images/M2.jpg');
+  background-size: contain;
+}
+.carousel-slider-3{
+  background-image: url('../../../images/M3.jpg');
+  background-size: contain;
+}
+.carousel-slider-4{
+  background-image: url('../../../images/M4.jpg');
+  background-size: contain;
+} 
+.apply-btn-slider{
+  font-weight: 400;
+  position: absolute;
+  right: 17%;
+  bottom: 3%;
+  min-height: 4vh !important;
+}
+.slider-left-btn{
+  font-weight: 400;
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+  min-height: 4vh !important;
+}
+}
+
+@media (max-width: 620px){
+  .apply-btn-slider{
+    position: absolute;
+    right: 16%;
+    bottom: 6%;
+    font-weight: 100 !important;
+    font-size: 0.7rem !important;
+    min-height: 3vh !important;
+  }
+  .slider-left-btn{
+    position: absolute;
+    left: 5%;
+    bottom: 6%;
+    font-weight: 100 !important;
+    font-size: 0.7rem !important;
+    min-height: 3vh !important;
+  }
+}
+
+@media (max-width: 300px){
+  .apply-btn-slider{
+    position: absolute;
+    right: 16%;
+    bottom: 9%;
+    font-weight: 0 !important;
+    font-size: 0.4rem !important;
+    min-height: 3vh !important;
+  }
+  .slider-left-btn{
+    position: absolute;
+    left: 5%;
+    bottom: 9%;
+    font-weight: 0 !important;
+    font-size: 0.4rem !important;
+    min-height: 3vh !important;
+  }
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: rgba(168, 168, 168, 0.705) !important;
+  border: 1px solid rgb(59, 59, 59) !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.carousel-indicators{
+  margin-bottom: -0.7rem;
+}
+.carousel-indicators button.active {
+
+  background-color: rgba(255, 255, 255, 0.833) !important;
+  border: 1px solid rgb(59, 59, 59) !important;
+}

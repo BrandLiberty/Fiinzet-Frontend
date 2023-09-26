@@ -2,14 +2,17 @@ import HomeLoan from "../../assets/images/homeLoan2.png";
 import BalanceTransfer from "../../assets/images/BT.jpg";
 import LoanAgainstProperty from "../../assets/images/LAP.jpg";
 import {  useNavigate } from "react-router-dom";
-import "../../assets/css/card.css";
+import "../../assets/css/container/include/card.css";
 
 
 function Cards() {
+
   const navegate = useNavigate();
+
   function add() {
     navegate("/Login");
   }
+  
   return (
     <div className="album py-5 midB album1 bgCards">
       <div className="container">

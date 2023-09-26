@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-
 import HomeLoan from "../../assets/images/homeLoan2.png";
 import BalanceTransfer from "../../assets/images/BT.jpg";
 import LoanAgainstProperty from "../../assets/images/LAP.jpg";
 import { Link } from "react-router-dom";
-import "../../assets/css/product.css";
+import "../../assets/css/container/products/product.css";
+
 function Product() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,7 +13,6 @@ function Product() {
   return (
     <div className="mt-3 pt-2 main">
       <div className="container marketing my-5 ">
-        {/* <hr className="featurette-divider" /> */}
 
         <div className="row featurette hiCSS">
           <div className="col-md-5 order-md-2 iCSS ">
@@ -144,8 +143,6 @@ function Product() {
             </button>
           </div>
         </div>
-
-        {/* <hr className="featurette-divider" /> */}
       </div>
     </div>
   );

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import numeral from "numeral"; // For formatting currency
-import "../../assets/css/calculator.css";
-// import Contact from "../../assets/images/homeLoan2.jpg";
+import "../../assets/css/container/scenes/calculator.css";
 import Contact from "../../assets/images/homecal.jpg";
 import Box from "@mui/material/Box";
 
@@ -206,12 +204,7 @@ const LoanEligibilityCalculator = () => {
                           variant="outlined"
                           onClick={checkEligibility} 
                         >
-                        {/* <Button
-                          type="submit"
-                          className="button button1"
-                          variant="outlined"
-                          onClick={() => {calculateHomeLoanEligibility();calculateHomeLoanEmi();}}
-                        > */}
+                        
                           Calculate
                         </Button>
                         
@@ -225,8 +218,6 @@ const LoanEligibilityCalculator = () => {
                       </Stack>
                       </div>
                       </div>
-             
-              
             </div>
           </div>
         </div>

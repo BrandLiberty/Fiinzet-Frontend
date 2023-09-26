@@ -1,18 +1,16 @@
 import Box from "@mui/material/Box";
-
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { useState, useEffect } from "react";
-
-
 import Contact from "../../assets/images/homeLoan2.png";
-
-import "../../assets/css/homeloan.css";
+import "../../assets/css/container/scenes/homeloan.css";
 
 function HomeLoan() {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
   const [num3, setNum3] = useState(0);

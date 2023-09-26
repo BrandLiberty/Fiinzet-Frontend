@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import BackgroundImage from "../../assets/images/abanner.png"; // Replace with the path to your background image
-import "../../assets/css/about.css";
+import "../../assets/css/container/about/about.css";
 import logoFiinzet from "../../assets/images/logoPng.png";
 
 function About2() {

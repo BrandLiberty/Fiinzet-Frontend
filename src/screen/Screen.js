@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/navigation/Navbar'
 import Footer from '../components/navigation/Footer'
-import { useRef } from 'react';
-import "../components/assets/css/screen.css";
+import "../components/assets/css/screen/screen.css";
 
 const Screen = (props) => {
 
+  // Find the Width and height of the screen
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
@@ -22,25 +22,36 @@ const Screen = (props) => {
     };
   }, []);
 
+  // Adding styles based on screeen
+  const ScreenContainer_style = {
+
+    width: `${screenWidth}px`,
+    height: `${screenHeight}px`,
+    overflowX: 'hidden',
+
+  }
+
+ 
+
+  const footerContainer_style = {
+    overflow: 'hidden'
+  }
+
   return (
-    <div style={{
-      width: `${screenWidth}px`,
-      height: `${screenHeight}px`,
-      overflowX :'hidden',
-    }}>
+    <div style={{ ScreenContainer_style }}>
+
       <div>
         <Navbar />
       </div>
-      <div style={{
-        marginTop: '95px'
-      }} className='body-margin-top-media'>
+
+      <div className='body-margin-top-media'>
         {props?.children}
       </div>
-      <div style={{
-        overflow :'hidden'
-      }}>
+
+      <div style={{footerContainer_style}}>
         <Footer />
       </div>
+      
     </div>
   )
 }

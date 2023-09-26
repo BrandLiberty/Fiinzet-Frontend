@@ -1,11 +1,12 @@
 import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import logoFiinzet from "../assets/images/logoPng.png";
-import '../assets/css/navbar.css';
+import '../assets/css/navigation/navbar.css';
 
 
 
 function Navbar() {
+  
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [removeBorder, setRemoveBorder] = useState(false);
 

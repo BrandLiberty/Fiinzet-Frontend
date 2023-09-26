@@ -1,23 +1,24 @@
-import React, { useState, useEffect , useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Form, Alert } from "react-bootstrap";
 
 import Contact from "../../assets/images/details.jpg";
-import "../../assets/css/login.css";
-import "../../assets/css/contact.css";
+import "../../assets/css/container/auth/login.css";
+import "../../assets/css/container/contact_us/contact.css";
 import { Context } from "../../../App";
 
 const Login = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const contextValue = useContext(Context)
   const [error, setError] = useState("");
   // const [name, setname] = useState("");
-   const [phone, setphone1] = useState("");
-  
+  const [phone, setphone1] = useState("");
+
   const [flage, setflage] = useState("");
-  
+
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -32,16 +33,16 @@ const Login = () => {
     }
   };
   const add = async () => {
-    
-    if ( contextValue.name &&contextValue.email && phone && contextValue.pincode && contextValue.status && contextValue.city) {
-    
-      
-      
+
+    if (contextValue.name && contextValue.email && phone && contextValue.pincode && contextValue.status && contextValue.city) {
+
+
+
       contextValue.setPhone(`+91${phone}`)
       console.log(contextValue)
-      
+
       navigate("/phonesignup");
-     // setflage(false);
+      // setflage(false);
     } else {
       alert("Enter All Details")
       //setflage(true);
@@ -49,7 +50,7 @@ const Login = () => {
   };
 
   return (
-      
+
     <section className="section mt-5 pt-4 pb-5 contact-div">
       <div className="container">
         <div className="row">
@@ -81,11 +82,11 @@ const Login = () => {
 
                 <input
                   type="text"
-                  value={ contextValue.name}
+                  value={contextValue.name}
                   onChange={(e) => {
                     contextValue.setname(e.target.value);
                   }}
-                  
+
                   className="form-control mb-2"
                   placeholder="Enter Full Name"
                 ></input>
@@ -95,9 +96,9 @@ const Login = () => {
                 <input
                   type="text"
                   inputMode="numeric"
-              
-                maxLength={10}
-                  value={ phone}
+
+                  maxLength={10}
+                  value={phone}
                   onChange={(e) => {
                     setphone1(e.target.value);
                   }}
@@ -109,7 +110,7 @@ const Login = () => {
                 <label>Email Address</label>
                 <input
                   type="email"
-                  value={ contextValue.email}
+                  value={contextValue.email}
                   onChange={(e) => {
                     contextValue.setemail(e.target.value);
                   }}
@@ -121,7 +122,7 @@ const Login = () => {
               <div>
                 <label>City</label>
                 <select
-                  value={ contextValue.city}
+                  value={contextValue.city}
                   onChange={(e) => {
                     contextValue.setcity(e.target.value);
                   }}
@@ -139,8 +140,8 @@ const Login = () => {
                 <input
                   type="text"
                   inputMode="numeric"
-                maxLength={6}
-                  value={ contextValue.pincode}
+                  maxLength={6}
+                  value={contextValue.pincode}
                   onChange={(e) => {
                     contextValue.setpincode(e.target.value);
                   }}
@@ -152,7 +153,7 @@ const Login = () => {
               <div>
                 <label>Employee Status</label>
                 <select
-                  value={ contextValue.status}
+                  value={contextValue.status}
                   onChange={(e) => {
                     contextValue.setstatus(e.target.value);
                   }}
@@ -165,16 +166,16 @@ const Login = () => {
                   <option>Salaried</option>
                 </select>
               </div>
-              <div><br/>
-                
+              <div><br />
+
                 <input
                   type="checkbox"
                   required
-              
-                  // className="form-control mb-2"
-                  // placeholder="Enter Pincode"
+
+                // className="form-control mb-2"
+                // placeholder="Enter Pincode"
                 >
-                  
+
                 </input> I agree to Fiinzet Privacy Policy and Terms & Conditions and receive communication from Fiinzet via Call, SMS, E-mail, and WhatsApp.
               </div>
             </Form>
@@ -189,7 +190,7 @@ const Login = () => {
         </div>
       </div>
     </section>
-   
+
   );
 };
 

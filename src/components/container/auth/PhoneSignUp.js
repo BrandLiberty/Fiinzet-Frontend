@@ -5,7 +5,7 @@ import { Form, Alert, Button } from "react-bootstrap";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useUserAuth } from "../../../context/UserAuthContext";
-import "../../assets/css/phoneSignup.css";
+import "../../assets/css/container/auth/phoneSignup.css";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { Context } from "../../../App";
 import { auth } from "../../../firebase/firebase";

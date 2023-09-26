@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/css/calculatorpage.css";
+import "../../assets/css/container/scenes/calculatorpage.css";
 import card1 from "../../assets/images/homecal2.png";
 import card2 from "../../assets/images/elgcal2.png";
 
@@ -12,15 +12,12 @@ function CalculatorPage() {
         <div className="container">
           <div>
             <div className="card-body">
-              {/* ........... */}
 
-              {/* ..... */}
 
               <div className="row">
                 {/* <!-- ...................Card1..................... --> */}
                 <div className="col-lg-6 mb-4 cardWidth">
                   <div className="card calBody">
-                    {/* <img className="img-fluid" src="" alt="" /> */}
 
                     <div className="card-body ">
                       <img src={card1} className="card-logoC" alt="card" />
@@ -33,9 +30,7 @@ function CalculatorPage() {
                         estimated monthly mortgage payments based on loan
                         amount, interest rate, and loan term.
                       </p>
-
                     
-
                       <button
                         type="button"
                         className=" btn  btn-primary CPbutton"
@@ -55,7 +50,6 @@ function CalculatorPage() {
                 {/* <!-- ...................Card2..................... --> */}
                 <div className="col-lg-6 mb-4 cardWidth">
                   <div className="card calBody">
-                    {/* <img className="card-img-top" src="" alt="" /> */}
 
                     <div className="card-body ">
                       <img src={card2} className="card-logoC" alt="logo"></img>

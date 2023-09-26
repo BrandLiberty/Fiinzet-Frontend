@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Contact from "../../assets/images/contact.jpg";
-import "../../assets/css/contact.css";
+import "../../assets/css/container/contact_us/contact.css";
 
 const ContactUs = () => {
   useEffect(() => {
