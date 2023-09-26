@@ -49,17 +49,18 @@ function Slider() {
     }
   }
 
-  document.documentElement.style.setProperty('--carouselItem-screen-width', `${(screenWidth * (1550 / 1536)) / logBase(screenWidth, 100)}px`);
+  document.documentElement.style.setProperty('--carouselItem-screen-height', `${(screenWidth * (1550 / 1536)) / logBase(screenWidth, 100)}px`);
 
-  document.documentElement.style.setProperty('--div-screen-width', `${(screenWidth * (1550 / 1536)) / logBase(screenWidth, 100)}px`);
-
+  document.documentElement.style.setProperty('--div-screen-height', `${(screenWidth * (1550 / 1536)) / logBase(screenWidth, 100)}px`);
+  document.documentElement.style.setProperty('--carousel-screen-width', `${screenWidth-15}px`);
+  document.documentElement.style.setProperty('--div-screen-width', `${screenWidth-15}px`);
   // Check if the media query matches
   if (window.matchMedia(mediaQuery).matches) {
     // If the media query matches, update the styles object
-
-
-    container_styles.container.height = `var(--carouselItem-screen-widths)`
-    containerdiv_styles.container.height = `var(--div-screen-width)`;
+    container_styles.container.width = `var(--carousel-screen-width)`;
+    containerdiv_styles.container.width = `var(--div-screen-width)`;
+    container_styles.container.height = `var(--carouselItem-screen-height)`;
+    containerdiv_styles.container.height = `var(--div-screen-height)`;
     containerdiv_styles.container.marginTop = `0px`;
     // Add other styles for the media query here
   }

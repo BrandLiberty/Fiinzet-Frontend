@@ -7,6 +7,9 @@ a{
   margin-top: 0px !important;
   padding-left: 0;
   padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-height{
@@ -103,6 +106,7 @@ a{
 @media (max-width: 774px) {
   
  .carousel-slider-1{
+  margin:4px;
   background-image: url('../../../images/M1.jpg');
   background-size: contain;
   background-position: center center;
@@ -125,14 +129,14 @@ a{
   font-weight: 400;
   position: absolute;
   right: 17%;
-  bottom: 3%;
+  bottom: 7%;
   min-height: 4vh !important;
 }
 .slider-left-btn{
   font-weight: 400;
   position: absolute;
   left: 5%;
-  bottom: 3%;
+  bottom: 7%;
   min-height: 4vh !important;
 }
 }
@@ -140,8 +144,8 @@ a{
 @media (max-width: 620px){
   .apply-btn-slider{
     position: absolute;
-    right: 16%;
-    bottom: 6%;
+    right: 13%;
+    bottom: 8%;
     font-weight: 100 !important;
     font-size: 0.7rem !important;
     min-height: 3vh !important;
@@ -149,7 +153,7 @@ a{
   .slider-left-btn{
     position: absolute;
     left: 5%;
-    bottom: 6%;
+    bottom: 8%;
     font-weight: 100 !important;
     font-size: 0.7rem !important;
     min-height: 3vh !important;
@@ -160,7 +164,7 @@ a{
   .apply-btn-slider{
     position: absolute;
     right: 16%;
-    bottom: 9%;
+    bottom: 10%;
     font-weight: 0 !important;
     font-size: 0.4rem !important;
     min-height: 3vh !important;
@@ -168,7 +172,7 @@ a{
   .slider-left-btn{
     position: absolute;
     left: 5%;
-    bottom: 9%;
+    bottom: 13%;
     font-weight: 0 !important;
     font-size: 0.4rem !important;
     min-height: 3vh !important;
@@ -186,7 +190,7 @@ a{
   border: none !important;
 }
 .carousel-indicators{
-  margin-bottom: -0.7rem;
+  margin-bottom: -1.3rem;
 }
 .carousel-indicators button.active {
 
