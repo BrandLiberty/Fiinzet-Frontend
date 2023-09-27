@@ -70,12 +70,12 @@ function Slider() {
       <Carousel className="carousel-height" >
 
         <Carousel.Item style={container_styles.container} >
-          <div className=" wrap carousel-slider-1 animated-button1 glassy-panel" style={containerdiv_styles.container}>
+          <div className=" wrap carousel-slider-1" style={containerdiv_styles.container}>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-            <a href="/login" className="slider-btn apply-btn-slider  animated-button1">
+            <a href="/login" className="slider-btn apply-btn-slider  animated-button1 permanent-shake-button">
               <span></span>
               <span></span>
               <span></span>
@@ -88,12 +88,12 @@ function Slider() {
 
 
         <Carousel.Item style={container_styles.container} >
-          <div className="wrap carousel-slider-2 animated-button1 glassy-panel" style={containerdiv_styles.container}>
+          <div className="wrap carousel-slider-2 " style={containerdiv_styles.container}>
           <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <a href="/login" className="slider-btn apply-btn-slider animated-button1">
+            <a href="/login" className="slider-btn apply-btn-slider animated-button1 permanent-shake-button">
               <span></span>
               <span></span>
               <span></span>
@@ -105,12 +105,12 @@ function Slider() {
 
 
         <Carousel.Item style={container_styles.container} >
-          <div className="wrap carousel-slider-3 glassy-panel" style={containerdiv_styles.container}>
+          <div className="wrap carousel-slider-3 " style={containerdiv_styles.container}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <a href="/login" className="slider-btn apply-btn-slider animated-button1">
+            <a href="/login" className="slider-btn apply-btn-slider animated-button1 permanent-shake-button">
               <span></span>
               <span></span>
               <span></span>
@@ -123,12 +123,12 @@ function Slider() {
 
 
         <Carousel.Item style={container_styles.container} >
-          <div className="wrap carousel-slider-4 animated-button1 glassy-panel" style={containerdiv_styles.container}>
+          <div className="wrap carousel-slider-4" style={containerdiv_styles.container}>
           <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <a href="/login" className="slider-btn slider-left-btn animated-button1">
+            <a href="/login" className="slider-btn slider-left-btn animated-button1 permanent-shake-button">
               <span></span>
               <span></span>
               <span></span>

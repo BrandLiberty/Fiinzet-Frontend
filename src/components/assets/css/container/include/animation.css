@@ -16,7 +16,7 @@
 }
 .slider-btn {
   min-width: 12vw;
-  min-height: 6vh;
+  min-height: 2vw;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -169,7 +169,7 @@
     from(rgba(8, 43, 21, 0)),
     to(#32d926)
   );
-  background: linear-gradient(to left, #ffffff, #b4d441, #ffffff);
+  background: linear-gradient(to left,  #4d5e10, #b4d441, #4d5e10);
   -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
@@ -186,7 +186,7 @@
     from(rgba(43, 8, 8, 0)),
     to(#d92626)
   );
-  background: linear-gradient(to top, #ffffff, #b4d441, #ffffff);
+  background: linear-gradient(to top, #4d5e10, #b4d441, #4d5e10);
   -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
@@ -203,7 +203,7 @@
     from(rgba(43, 8, 8, 0)),
     to(#d92626)
   );
-  background: linear-gradient(to right,#ffffff, #b4d441, #ffffff);
+  background: linear-gradient(to right #4d5e10, #b4d441, #4d5e10);
   -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
@@ -220,7 +220,22 @@
     from(rgba(43, 8, 8, 0)),
     to(#d92626)
   );
-  background: linear-gradient(to bottom, #ffffff, #b4d441, #ffffff);
+  background: linear-gradient(to bottom, #4d5e10, #b4d441, #4d5e10);
   -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
+}
+
+/* Define the initial state of the button */
+.permanent-shake-button {
+  animation: shake 1s ease-in-out infinite; /* Apply the shake animation */
+}
+
+/* Define the shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translatey(-10px); }
+  50% { transform: translateX(10px); }
+  /* 75% { transform: translatey(-5px); } */
+  /* 100% { transform: translateX(5px); } */
+  
 }
