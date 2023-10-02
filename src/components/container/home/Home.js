@@ -1,9 +1,14 @@
+import {useEffect} from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../../../context/UserAuthContext";
 import "../../assets/css/thanks.css"
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const { logOut, user } = useUserAuth();
 
   const navigate = useNavigate();

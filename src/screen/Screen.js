@@ -44,7 +44,7 @@ const Screen = (props) => {
         <Navbar />
       </div>
 
-      <div className='body-margin-top-media'>
+      <div >
         {props?.children}
       </div>
 

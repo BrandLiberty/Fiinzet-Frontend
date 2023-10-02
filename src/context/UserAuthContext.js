@@ -14,6 +14,7 @@ import { auth } from "../firebase/firebase";
 const userAuthContext = createContext();
 
 export function UserAuthContextProvider({ children }) {
+  
   const [user, setUser] = useState({});
 
   function logIn(email, password) {
@@ -31,13 +32,17 @@ export function UserAuthContextProvider({ children }) {
   }
 
   function setUpRecaptha(number) {
-    const recaptchaVerifier = new RecaptchaVerifier(
-       auth,
-       "recaptcha-container",
-      {}
-    );
-    recaptchaVerifier.render();
-    return signInWithPhoneNumber(auth, number, recaptchaVerifier);
+   try {
+     const recaptchaVerifier = new RecaptchaVerifier(
+        auth,
+        "recaptcha-container",
+       {size: 'invisible'}
+     );
+     // recaptchaVerifier.render();
+     return signInWithPhoneNumber(auth, number, recaptchaVerifier);
+   } catch (error) {
+    
+   }
   }
 
   useEffect(() => {

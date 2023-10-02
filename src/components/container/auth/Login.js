@@ -16,8 +16,10 @@ const Login = () => {
   const [error, setError] = useState("");
   // const [name, setname] = useState("");
   const [phone, setphone1] = useState("");
+  const [agreement, setagreement] = useState(false);
 
-  const [flage, setflage] = useState("");
+
+  const [flag, setflage] = useState("");
 
   const navigate = useNavigate();
 
@@ -33,8 +35,9 @@ const Login = () => {
     }
   };
   const add = async () => {
+    console.log('COntect Value' , {contextValue} , phone , agreement)
 
-    if (contextValue.name && contextValue.email && phone && contextValue.pincode && contextValue.status && contextValue.city) {
+    if (agreement && contextValue.name && contextValue.email && phone && contextValue.pincode && contextValue.status && contextValue.city) {
 
 
 
@@ -94,13 +97,14 @@ const Login = () => {
               <div>
                 <label>Phone Number</label>
                 <input
-                  type="text"
+                  type="number"
+  
                   inputMode="numeric"
 
                   maxLength={10}
                   value={phone}
                   onChange={(e) => {
-                    setphone1(e.target.value);
+                    setphone1(e.target.value.toString());
                   }}
                   className="form-control mb-2"
                   placeholder="Enter Phone Number"
@@ -170,13 +174,14 @@ const Login = () => {
 
                 <input
                   type="checkbox"
-                  required
+                  checked={agreement}
+                  onChange={(e) => {
+                    setagreement(e.target.checked)
+                  }
+                }
+                />
 
-                // className="form-control mb-2"
-                // placeholder="Enter Pincode"
-                >
-
-                </input> I agree to Fiinzet Privacy Policy and Terms & Conditions and receive communication from Fiinzet via Call, SMS, E-mail, and WhatsApp.
+                 I agree to Fiinzet Privacy Policy and Terms & Conditions and receive communication from Fiinzet via Call, SMS, E-mail, and WhatsApp.
               </div>
             </Form>
             <div classNames="button-container">

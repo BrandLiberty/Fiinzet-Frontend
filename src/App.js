@@ -25,6 +25,7 @@ function App() {
   const [pincode, setpincode] = useState("");
   const [status, setstatus] = useState("");
   const [city, setcity] = useState("");
+  const [agreement, setagreement] = useState(false);
     const contextValue = {
         phone : phone,
         setPhone : setPhone,
@@ -37,7 +38,9 @@ function App() {
         status:status,
         setstatus:setstatus,
         city:city,
-        setcity:setcity
+        setcity:setcity,
+        agreement:agreement,
+        setagreement:setagreement
     }
 
   return (
@@ -47,7 +50,7 @@ function App() {
         <Screen>
           <Routes>
             <Route path="/" element={<HomeLanding />} />
-            <Route path="/home" element={<HomeLanding />} />ok
+            <Route path="/home" element={<HomeLanding />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/product" element={<Product />} />
             <Route path="/contact" element={<ContactUs />} />

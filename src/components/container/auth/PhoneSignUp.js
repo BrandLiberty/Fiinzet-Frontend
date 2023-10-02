@@ -9,7 +9,11 @@ import "../../assets/css/container/auth/phoneSignup.css";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { Context } from "../../../App";
 import { auth } from "../../../firebase/firebase";
+import OTPInput from 'react-otp-input';
+
+
 const PhoneSignUp = () => {
+  // auth().settings.appVerificationDisabledForTesting = true;
   const [error, setError] = useState("");
   const [number, setNumber] = useState("");
   const [flag, setFlag] = useState(false);
@@ -20,6 +24,10 @@ const PhoneSignUp = () => {
   const [parameter, setParameter] = useState("");
   const contextValue = useContext(Context);
   const navigate = useNavigate();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   useEffect(() => {
     setNumber(contextValue.phone);
@@ -67,25 +75,26 @@ const PhoneSignUp = () => {
       let f = contextValue.city;
 
       async function add() {
-      
+
         // fetch("https://fiinzet.com/senduserinput", prerequire)
         fetch("https://www.fiinzet.com/sendUserInput", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-         
+
           body: new URLSearchParams({
             name: a,
             phone: c,
             email: b,
             status: d,
             pincode: e,
-            city:f
-           })})
+            city: f
+          })
+        })
           .then((data) => {
             console.log(data);
           })
           .catch((err) => {
-            console.log("data not save ",err);
+            console.log("data not save ", err);
           });
         //console.log(name,email,phone,status,pincode)
       }
@@ -97,16 +106,20 @@ const PhoneSignUp = () => {
   };
 
   async function resendOtp() {
-    setTimer(true);
-    setTimeout(() => {
-      setTimer(false);
-    }, 1000 * 60 * 1);
-    // setFlag(true)
-    console.log(result);
-    console.log(number);
-    const recaptchaVerifier = new RecaptchaVerifier(auth, "resend", {});
-    console.log("////", { recaptchaVerifier });
-    return signInWithPhoneNumber(auth, number, recaptchaVerifier);
+    try {
+      setTimer(true);
+      setTimeout(() => {
+        setTimer(false);
+      }, 1000 * 60 * 1);
+      // setFlag(true)
+      console.log(result);
+      console.log(number);
+      const recaptchaVerifier = new RecaptchaVerifier(auth, "resend", { size: 'invisible' });
+      console.log("////", { recaptchaVerifier });
+      return signInWithPhoneNumber(auth, number, recaptchaVerifier);
+    } catch (error) {
+      
+    }
   }
 
   return (
@@ -118,7 +131,7 @@ const PhoneSignUp = () => {
               <div className="card-body">
                 <div className="p-4 box">
                   <h2 className="mb-4">Verification process </h2>
-                  
+
                   <Form
                     onSubmit={getOtp}
                     style={{ display: !flag ? "block" : "none" }}
@@ -149,14 +162,14 @@ const PhoneSignUp = () => {
                     onSubmit={verifyOtp}
                     style={{ display: flag ? "block" : "none" }}
                   >
-                    <Form.Group className="mb-3" controlId="formBasicOtp">
-                      <Form.Control
-                        type="otp"
-                        defaultCountry="IN"
-                        placeholder="Enter OTP"
-                        onChange={(e) => setOtp(e.target.value)}
-                      />
-                    </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicOtp">
+                    <OTPInput
+                      value={otp}
+                      onChange={setOtp}
+                      numInputs={6} // Number of OTP input fields
+                      separator={<span>-</span>} // Optional separator between input fields
+                      renderInput={(props, index) => <div style={{margin : 5 , width : 32}}><input {...props} type="number" style={{width : 30, textAlign : 'center' , textDecoration: 'none'}}/></div>} />
+                      </Form.Group>
                     <div className="button-right">
                       <Link to="recaptcha-container">
                         <Button className="secBTN" variant="secondary">
